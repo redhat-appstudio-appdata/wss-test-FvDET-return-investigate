@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-phjs
+  namespace: lpardo-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d99dc69186626864c04ca47a11811143002c0d0178f3bf394189c82ff9072bb9
+        name: my-python
+        resources: {}
+status: {}
